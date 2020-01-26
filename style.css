@@ -1,0 +1,166 @@
+/*
+Theme Name: SF catalog
+Theme URI: 
+Author: Sylvain Gandon
+Author URI: 
+Description: Theme for horse catalog of Selle Francais.
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: sf-catalog
+*/
+
+body {
+    color: #0e113b;
+}
+
+nav ul {
+    display: flex;
+    line-height: 50px;
+    font-size: 1.4em;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0e113b;
+}
+
+nav div>ul::before {
+    content: '';
+    height: 50px;
+    width: 50px;
+    display: block;
+    flex: 1 1 auto;
+    background-image: url("assets/images/sf.jpg");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+}
+
+nav li {
+    display: block;
+    list-style: none;
+    flex: 1 1 auto;
+    text-align: center;
+    position: relative;
+}
+
+nav li ul {
+    display: none;
+    background-color: #0d103b;
+    font-size: 0.8em;
+    z-index: 999;
+}
+
+nav li ul li {
+    display: block;
+}
+
+nav li ul li a {
+    color: white;
+}
+
+nav li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 0;
+    font-size: 3em;
+    line-height: 0.3em;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%) rotate(-3deg);
+    white-space: nowrap;
+}
+
+h1::after {
+    text-decoration: none;
+    content: " ";
+    display: block;
+    background: linear-gradient(to right, #2a2927, #f1c589);
+    height: 3px;
+    width: 125px;
+    margin-top: 0.4em;
+}
+
+h2 {
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+h2::before {
+    content: '';
+    width: auto;
+}
+
+h2::after {
+    text-decoration: none;
+    content: '';
+    display: inline-block;
+    background: linear-gradient(to right, #2a2927, #f1c589);
+    height: 5px;
+    width: 120%;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+h4::after {
+    content: ':';
+}
+
+.content {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*
+table {
+    border-collapse: collapse;
+}
+
+th::after, tr::after {
+    text-decoration: none;
+    content: '';
+    display: inline-block;
+    background: linear-gradient(to right, #2a2927, #f1c589);
+    height: 1px;
+}*/
+
+table {
+    background-image: linear-gradient(to right, #2a2927, #f1c589);
+    background-origin: border-box;
+    border-spacing: 0px 1px;
+    border-bottom: 1px solid transparent;
+    margin-bottom: 50px;
+}
+
+td {
+    background-color: white;
+}
+
+hr {
+    background: linear-gradient(to right, #83603d, #f1c589, #83603d);
+    width: 15%;
+    height: 3px;
+    display: block;
+    border: none;
+    margin: 30px auto;
+    text-align: center;
+    transform: rotate(-3deg);
+}
