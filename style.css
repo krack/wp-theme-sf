@@ -11,8 +11,24 @@ Tags:
 Text Domain: sf-catalog
 */
 
+@font-face {
+    font-family: "BluuNext-Bold";
+    src: url("assets/fonts/BluuNext-Bold.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "FengardoNeue_Black";
+    src: url("assets/fonts/FengardoNeue_Black.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "FengardoNeue_Regular";
+    src: url("assets/fonts/FengardoNeue_Regular.otf") format("truetype");
+}
+
 body {
     color: #0e113b;
+    font-family: "FengardoNeue_Regular";
 }
 
 nav ul {
@@ -81,6 +97,7 @@ h1 {
     margin-left: 50%;
     transform: translate(-50%) rotate(-3deg);
     white-space: nowrap;
+    font-family: "BluuNext-Bold";
 }
 
 h1::after {
@@ -100,6 +117,7 @@ h2 {
     display: inline-block;
     margin-left: 50%;
     transform: translate(-50%);
+    font-family: "BluuNext-Bold";
 }
 
 h2::before {
@@ -116,6 +134,10 @@ h2::after {
     width: 120%;
 }
 
+h3 {
+    font-family: "FengardoNeue_Black";
+}
+
 h4 {
     font-weight: bold;
 }
@@ -128,19 +150,6 @@ h4::after {
     margin-left: 10%;
     margin-right: 10%;
 }
-
-/*
-table {
-    border-collapse: collapse;
-}
-
-th::after, tr::after {
-    text-decoration: none;
-    content: '';
-    display: inline-block;
-    background: linear-gradient(to right, #2a2927, #f1c589);
-    height: 1px;
-}*/
 
 table {
     background-image: linear-gradient(to right, #2a2927, #f1c589);
@@ -163,4 +172,8 @@ hr {
     margin: 30px auto;
     text-align: center;
     transform: rotate(-3deg);
+}
+
+pre {
+    font-family: "FengardoNeue_Regular";
 }
