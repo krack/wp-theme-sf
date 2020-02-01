@@ -31,6 +31,10 @@ body {
     font-family: "FengardoNeue_Regular";
 }
 
+nav {
+    margin: 0 10%;
+}
+
 nav ul {
     display: flex;
     line-height: 50px;
@@ -45,15 +49,17 @@ nav a {
     color: #0e113b;
 }
 
-nav div>ul::before {
+.header::before {
     content: '';
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     display: block;
     flex: 1 1 auto;
-    background-image: url("assets/images/sf.jpg");
+    background-image: url("assets/images/sf_blue.png");
     background-repeat: no-repeat;
-    background-size: 50px 50px;
+    background-size: 60px 60px;
+    position: absolute;
+    left: 2%;
 }
 
 nav li {
@@ -111,27 +117,37 @@ h1::after {
 }
 
 h2 {
+    background: radial-gradient(#152857, #0b0f1e);
+    color: white;
+    font-family: "BluuNext-Bold";
+    display: block;
+    padding: 5px 20px;
+    width: min-content;
+    white-space: nowrap;
+    margin: 50px auto;
+    font-size: 2em;
+}
+
+h3 {
     text-decoration: none;
     position: relative;
     text-align: center;
     display: inline-block;
-    margin-left: 50%;
-    transform: translate(-50%);
     font-family: "BluuNext-Bold";
 }
 
-h2::before {
+h3::before {
     content: '';
     width: auto;
 }
 
-h2::after {
+h3::after {
     text-decoration: none;
     content: '';
     display: inline-block;
-    background: linear-gradient(to right, #2a2927, #f1c589);
-    height: 5px;
-    width: 120%;
+    background: linear-gradient(to right, #2a2927, #f1c589, #2a2927);
+    height: 2px;
+    width: 100%;
 }
 
 h3 {
@@ -176,4 +192,5 @@ hr {
 
 pre {
     font-family: "FengardoNeue_Regular";
+    white-space: pre-line;
 }
