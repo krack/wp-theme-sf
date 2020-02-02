@@ -299,3 +299,28 @@ a[href$="pdf"]:first-child {
     margin-left: 10%;
     margin-right: 10%;
 }
+
+.highlighted.illusation6>*>* {
+    margin: auto;
+}
+
+.highlighted.illusation6 {
+    color: black;
+}
+
+.highlighted.illusation6>* {
+    margin-top: -150px;
+}
+
+.highlighted.illusation6::before {
+    content: '';
+    background-image: url("assets/images/Illustrations-5.png");
+    background-repeat: repeat;
+    background-size: 339px 450px;
+    width: 339px;
+    height: 450px;
+    top: -150px;
+    margin: auto;
+    display: block;
+    position: relative;
+}
