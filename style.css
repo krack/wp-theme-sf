@@ -304,12 +304,12 @@ a[href$="pdf"]:first-child {
     margin: auto;
 }
 
-.highlighted.illusation6 {
+.highlighted table {
     color: black;
 }
 
 .highlighted.illusation6>* {
-    margin-top: -150px;
+    margin-top: -140px;
 }
 
 .highlighted.illusation6::before {
@@ -319,8 +319,94 @@ a[href$="pdf"]:first-child {
     background-size: 339px 450px;
     width: 339px;
     height: 450px;
-    top: -150px;
-    margin: auto;
-    display: block;
     position: relative;
+    top: -140px;
+    display: block;
+    margin: auto;
+}
+
+.illusation3 {
+    margin-left: 10%;
+}
+
+.illusation3::before {
+    content: '';
+    background-image: url("assets/images/Illustrations-3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25%;
+    height: 50%;
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+.illusation4 {
+    position: relative;
+}
+
+.illusation4>*:first-child {
+    padding-left: 50%;
+}
+
+.illusation4::before {
+    content: '';
+    background-image: url("assets/images/Illustrations-4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 55%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+.pga .wp-block-group:first-child p {
+    width: 50%;
+}
+
+.pga .wp-block-group p {
+    margin-left: 1.5em;
+    width: 100%;
+}
+
+.pga .wp-block-group {
+    width: 60%;
+}
+
+.pga .wp-block-group:last-child {
+    width: 90%;
+}
+
+.pga h3 {
+    text-align: center;
+    margin: auto;
+    display: block
+}
+
+.pga h3::after {
+    content: none;
+}
+
+.pga.highlighted {
+    clip-path: none;
+    padding-top: 0px;
+}
+
+.pga>*:first-child>p:first-child {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pga.highlighted h4 {
+    margin-left: 1.2em;
+    margin-bottom: 0;
+}
+
+.pga.highlighted p {
+    margin-top: 0%;
 }
