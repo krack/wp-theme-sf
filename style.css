@@ -26,6 +26,11 @@ Text Domain: sf-catalog
     src: url("assets/fonts/FengardoNeue_Regular.otf") format("truetype");
 }
 
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 body {
     color: #0e113b;
     font-family: "FengardoNeue_Regular";
@@ -90,6 +95,64 @@ nav li:hover ul {
     position: absolute;
     left: 0;
     right: 0;
+}
+
+#menu-mobile {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 2%;
+}
+
+#menu-mobile .bar1, #menu-mobile .bar2, #menu-mobile .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+#menu-mobile.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+#menu-mobile.change .bar2 {
+    opacity: 0;
+}
+
+#menu-mobile.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media only screen and (max-width: 959px) {
+    nav {
+        display: none;
+        z-index: 100;
+    }
+    #menu-mobile {
+        display: inline-block;
+        z-index: 900;
+    }
+    #menu-mobile.change+nav {
+        display: block;
+        position: absolute;
+        left: 20%;
+        right: 0;
+        background: radial-gradient(#152857, #0b0f1e);
+        margin: 0;
+    }
+    #menu-mobile.change+nav ul {
+        display: block;
+    }
+    #menu-mobile.change+nav ul li {
+        display: block;
+        width: 100%;
+    }
+    #menu-mobile.change+nav ul li a {
+        color: white;
+    }
 }
 
 h1 {
@@ -409,4 +472,128 @@ a[href$="pdf"]:first-child {
 
 .pga.highlighted p {
     margin-top: 0%;
+}
+
+html.entry {
+    background: radial-gradient(farthest-corner at 100% 25%, #152857 2%, #0b0f1e 99%);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.entry .logo {
+    content: '';
+    height: 100px;
+    width: 100px;
+    display: block;
+    flex: 1 1 auto;
+    background-image: url("assets/images/sf_white.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+.entry .illustration {
+    content: "";
+    background-image: url("assets/images/Illustrations-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.entry .text {
+    position: absolute;
+    margin-left: 25%;
+    top: 25%;
+}
+
+.entry h1 {
+    color: white;
+    line-height: 1em;
+    font-size: 5em;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.entry h1 .edition {
+    font-size: 0.5em;
+}
+
+.entry h1::after {
+    display: none;
+}
+
+.entry h2 {
+    color: white;
+    line-height: 1em;
+    font-size: 2em;
+    font-weight: lighter;
+    margin: 0;
+    transform: translate(-50%) rotate(-3deg);
+    background: none;
+}
+
+.entry .text::after {
+    text-decoration: none;
+    content: " ";
+    display: block;
+    background: linear-gradient(to right, #2a2927, #f1c589, #2a2927);
+    height: 3px;
+    width: 120%;
+    margin-top: 0.4em;
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+    transform: translate(-50%) rotate(-3deg);
+}
+
+.entry a {
+    color: white;
+    line-height: 1em;
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    bottom: 10%;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 959px) {
+    .entry .logo {
+        left: 5%;
+        top: 3%;
+    }
+    .entry .illustration {
+        width: 75%;
+        top: 15%;
+    }
+    .entry .text {
+        position: static;
+        margin-top: 80%;
+    }
+    .entry h1 {
+        font-size: 3em;
+        max-width: 60%;
+    }
+    .entry h2 {
+        color: white;
+        line-height: 1em;
+        font-size: 1em;
+        font-weight: lighter;
+        margin: 0;
+        max-width: 60%;
+    }
+    .entry .text::after {
+        width: 90%;
+        transform: rotate(-3deg);
+    }
 }
