@@ -26,11 +26,6 @@ Text Domain: sf-catalog
     src: url("assets/fonts/FengardoNeue_Regular.otf") format("truetype");
 }
 
-html, body {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
 body {
     color: #0e113b;
     font-family: "FengardoNeue_Regular";
@@ -153,6 +148,9 @@ nav li:hover ul {
     #menu-mobile.change+nav ul li a {
         color: white;
     }
+    nav li ul {
+        background-color: transparent;
+    }
 }
 
 h1 {
@@ -177,6 +175,14 @@ h1::after {
     height: 3px;
     width: 125px;
     margin-top: 0.4em;
+}
+
+@media only screen and (max-width: 959px) {
+    h1 {
+        white-space: normal;
+        max-width: 100%;
+        line-height: 1em;
+    }
 }
 
 h2 {
@@ -288,6 +294,13 @@ a[href$="pdf"]:first-child {
 .approbation-request.highlighted h4, .highlighted p {
     width: 45%;
     margin-left: 15%;
+}
+
+@media only screen and (max-width: 959px) {
+    .approbation-request.highlighted h4, .highlighted p {
+        width: 100%;
+        margin-left: 1%;
+    }
 }
 
 .highlighted h4 {
@@ -425,6 +438,25 @@ a[href$="pdf"]:first-child {
     top: 40px;
 }
 
+@media only screen and (max-width: 959px) {
+    .highlighted.illusation2 {
+        display: block;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .highlighted.illusation2>div>* {
+        width: 100%;
+    }
+    .highlighted.illusation2>div>*:first-child {
+        padding-left: 0%;
+    }
+    .highlighted.illusation2>div h4, .highlighted.illusation2>div p, .highlighted.illusation2>div figure {
+        margin-left: 1%;
+        padding: 0;
+    }
+}
+
 .pga .wp-block-group:first-child p {
     width: 50%;
 }
@@ -472,6 +504,28 @@ a[href$="pdf"]:first-child {
 
 .pga.highlighted p {
     margin-top: 0%;
+}
+
+@media only screen and (max-width: 959px) {
+    .pga> :first-child>p:first-child {
+        width: 100%;
+    }
+    .pga .wp-block-group:first-child p {
+        width: 100%;
+    }
+    .pga .wp-block-group p, .illusation4> :first-child {
+        margin-left: 1%;
+        padding-left: 0;
+    }
+    .pga .wp-block-group {
+        width: 100%;
+    }
+    .pga .illusation3 {
+        margin-left: 0%;
+    }
+    .pga.highlighted h4 {
+        margin-left: 1%;
+    }
 }
 
 html.entry {
@@ -596,4 +650,15 @@ html.entry {
         width: 90%;
         transform: rotate(-3deg);
     }
+}
+
+button {
+    background: radial-gradient(#152857, #0b0f1e);
+    color: white;
+    font-family: "BluuNext-Bold";
+    display: block;
+    padding: 5px 20px;
+    width: min-content;
+    white-space: nowrap;
+    margin: 50px auto;
 }
