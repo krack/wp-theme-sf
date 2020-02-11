@@ -92,6 +92,10 @@ nav li:hover ul {
     right: 0;
 }
 
+#horse-menu{
+	font-size: 0.8em;
+}
+
 #menu-mobile {
     display: none;
     cursor: pointer;
@@ -178,11 +182,7 @@ h1::after {
 }
 
 @media only screen and (max-width: 959px) {
-    h1 {
-        white-space: normal;
-        max-width: 100%;
-        line-height: 1em;
-    }
+
 }
 
 h2 {
@@ -193,7 +193,7 @@ h2 {
     padding: 5px 20px;
     width: min-content;
     white-space: nowrap;
-    margin: 50px auto;
+    margin: 70px auto 30px auto;
     font-size: 2em;
 }
 
@@ -203,6 +203,7 @@ h3 {
     text-align: center;
     display: inline-block;
     font-family: "BluuNext-Bold";
+	font-weight: normal;
 }
 
 h3::before {
@@ -224,9 +225,11 @@ h3 {
 }
 
 h4 {
-    font-weight: bold;
     margin-left: 20%;
     font-size: 1.2em;
+    font-family: "FengardoNeue_Black";
+	font-weight: lighter;
+	
 }
 
 .content p {
@@ -259,6 +262,14 @@ hr {
     margin: 30px auto;
     text-align: center;
     transform: rotate(-3deg);
+}
+
+strong{
+	
+	
+    font-family: "FengardoNeue_Black";
+	font-weight: lighter;
+	font-size: 1.1em;
 }
 
 pre {
@@ -296,15 +307,29 @@ a[href$="pdf"]:first-child {
     margin-left: 15%;
 }
 
+.approbation-request > *:first-child{
+	margin-top: 25px;
+}
+
 @media only screen and (max-width: 959px) {
     .approbation-request.highlighted h4, .highlighted p {
         width: 100%;
         margin-left: 1%;
     }
 }
+@media only screen and (max-width: 959px) {
+	
+	h4{
+		margin-left: 7%;
+	}
+	.content p {
+		margin-left: 7%;
+		margin-right: 7%;
+		font-size: 1em;
+	}
+}
 
 .highlighted h4 {
-    font-weight: bold;
     margin: 0;
     margin-left: 1.5em;
     margin-bottom: 1%;
@@ -498,8 +523,11 @@ a[href$="pdf"]:first-child {
 }
 
 .pga.highlighted h4 {
-    margin-left: 1.2em;
+    margin-left: 1.5em;
     margin-bottom: 0;
+	font-size:1em;
+    font-family: "BluuNext-Bold";
+
 }
 
 .pga.highlighted p {
@@ -554,24 +582,24 @@ html.entry {
     background-image: url("assets/images/Illustrations-1.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 35%;
+    width: 50%;
     height: 100%;
     display: block;
     position: absolute;
     right: 0;
-    top: 25%;
+    top: 20%;
 }
 
 .entry .text {
     position: absolute;
-    margin-left: 25%;
+    left: 25%;
     top: 25%;
 }
 
 .entry h1 {
     color: white;
     line-height: 1em;
-    font-size: 5em;
+    font-size: 5.5em;
     font-weight: lighter;
     margin: 0;
 }
@@ -592,6 +620,7 @@ html.entry {
     margin: 0;
     transform: translate(-50%) rotate(-3deg);
     background: none;
+	padding-left: 0;
 }
 
 .entry .text::after {

@@ -18,7 +18,7 @@
         <h2>Selle Français young stallion guide</h2>
         
     </div>
-    <a href="/acceuil">Entrez</a>
+    <!--<a href="/acceuil">Entrez</a>-->
 
 </div> <!-- /.container -->
 <footer class="blog-footer">
