@@ -49,6 +49,14 @@ nav a {
     color: #0e113b;
 }
 
+nav a[href="#"] {
+    cursor: default;
+}
+
+.header {
+    padding-top: 10px;
+}
+
 .header::before {
     content: '';
     height: 60px;
@@ -185,7 +193,19 @@ h1::after {
     margin-top: 0.4em;
 }
 
-@media only screen and (max-width: 959px) {}
+@media only screen and (max-width: 959px) {
+    h1 {
+        text-align: center;
+        width: 100%;
+        line-height: 1em;
+        font-size: 1.8em;
+        white-space: pre-line;
+    }
+    h1::after {
+        margin: auto;
+        margin-top: 2%;
+    }
+}
 
 h2 {
     background: radial-gradient(#152857, #0b0f1e);
@@ -277,6 +297,14 @@ pre {
 }
 
 a[href$="pdf"]:first-child {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    max-width: 200px;
+}
+
+a[href$="pdf"]:first-child::before {
+    content: '';
     background-image: url("assets/images/pdf.svg");
     background-repeat: no-repeat;
     background-size: 60px 60px;
@@ -285,7 +313,6 @@ a[href$="pdf"]:first-child {
     height: 60px;
     display: block;
     margin: auto;
-    font-size: 0;
     margin-bottom: 10px;
 }
 
@@ -532,6 +559,17 @@ a[href$="pdf"]:first-child {
     margin-top: 0%;
 }
 
+.pga table {
+    width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pga table td {
+    height: 3em;
+    padding: 13px;
+}
+
 @media only screen and (max-width: 959px) {
     .pga> :first-child>p:first-child {
         width: 100%;
@@ -552,6 +590,24 @@ a[href$="pdf"]:first-child {
     .pga.highlighted h4 {
         margin-left: 1%;
     }
+}
+
+.pga-logo .wp-block-group__inner-container {
+    text-align: center;
+}
+
+.pga-logo figure {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.pga-logo img {
+    width: 150px;
+}
+
+.pga-intro {
+    font-size: 1.2em
 }
 
 html.entry {
@@ -688,4 +744,27 @@ button {
     width: min-content;
     white-space: nowrap;
     margin: 50px auto;
+}
+
+.blog-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.copyright {
+    font-size: 0.9em;
+    color: lightgray;
+}
+
+.copyright a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.blog-footer hr {
+    background: linear-gradient(to right, #152857, #152857, #152857);
+    width: 45%;
+    height: 3px;
+    transform: none;
 }

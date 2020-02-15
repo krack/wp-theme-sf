@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    console.log("---------->", $("na li"));
-    $("li", "nav").click(() => {
-        $("ul", this).toggleClass("open")
+    $("li", "nav").click(function () {
+        $("ul", this).toggleClass("open");
+
     });
 });
