@@ -100,6 +100,16 @@ nav li:hover ul {
     right: 0;
 }
 
+.is-provider-youtube {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.is-provider-youtube iframe, .is-provider-youtube object, .is-provider-youtube embed {
+    max-width: 100%;
+    margin: 0;
+}
+
 #horse-menu {
     font-size: 0.8em;
 }
@@ -108,7 +118,7 @@ nav li:hover ul {
     display: none;
     cursor: pointer;
     position: absolute;
-    right: 2%;
+    right: 5%;
 }
 
 #menu-mobile .bar1, #menu-mobile .bar2, #menu-mobile .bar3 {
@@ -166,6 +176,7 @@ nav li:hover ul {
     }
     #menu-mobile.change+nav .sub-menu.open {
         display: block;
+        position: static;
     }
 }
 
@@ -196,7 +207,6 @@ h1::after {
 @media only screen and (max-width: 959px) {
     h1 {
         text-align: center;
-        width: 100%;
         line-height: 1em;
         font-size: 1.8em;
         white-space: pre-line;
@@ -301,6 +311,8 @@ a[href$="pdf"]:first-child {
     margin: auto;
     margin-bottom: 10px;
     max-width: 200px;
+    text-decoration: none;
+    color: black;
 }
 
 a[href$="pdf"]:first-child::before {
@@ -339,7 +351,7 @@ a[href$="pdf"]:first-child::before {
 
 @media only screen and (max-width: 959px) {
     .approbation-request.highlighted h4, .highlighted p {
-        width: 100%;
+        width: 86%;
         margin-left: 1%;
     }
 }
@@ -357,7 +369,7 @@ a[href$="pdf"]:first-child::before {
 
 .highlighted h4 {
     margin: 0;
-    margin-left: 1.5em;
+    margin-left: 5%;
     margin-bottom: 1%;
     font-size: 1.2em;
 }
@@ -369,8 +381,8 @@ a[href$="pdf"]:first-child::before {
 .highlighted.illusation5::after {
     content: '';
     background-image: url("assets/images/Illustrations-5.png");
-    background-repeat: repeat;
-    background-size: 339px 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 339px;
     height: 450px;
     display: block;
@@ -404,7 +416,7 @@ a[href$="pdf"]:first-child::before {
 .highlighted.illusation2 p {
     margin: 0;
     width: 100%;
-    padding-left: 2em;
+    margin-left: 5%;
     margin-right: 20%;
 }
 
@@ -441,13 +453,13 @@ a[href$="pdf"]:first-child::before {
 
 .highlighted.illusation6::before {
     content: '';
-    background-image: url("assets/images/Illustrations-5.png");
-    background-repeat: repeat;
-    background-size: 339px 450px;
+    background-image: url("assets/images/Illustrations-6.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 339px;
     height: 450px;
     position: relative;
-    top: -140px;
+    top: -50px;
     display: block;
     margin: auto;
 }
@@ -490,11 +502,17 @@ a[href$="pdf"]:first-child::before {
 }
 
 @media only screen and (max-width: 959px) {
+    .highlighted.illusation2::before {
+        width: 100%;
+        max-height: 410px;
+        left: 0;
+    }
     .highlighted.illusation2 {
         display: block;
         margin: 0;
         padding-left: 0;
         padding-right: 0;
+        padding-top: 410px;
     }
     .highlighted.illusation2>div>* {
         width: 100%;
@@ -505,6 +523,23 @@ a[href$="pdf"]:first-child::before {
     .highlighted.illusation2>div h4, .highlighted.illusation2>div p, .highlighted.illusation2>div figure {
         margin-left: 1%;
         padding: 0;
+    }
+    .highlighted.illusation5::after {
+        max-height: 410px;
+        top: 29px;
+    }
+    .highlighted.illusation5 {
+        padding-top: 400px;
+    }
+    .highlighted .illusation3::before {
+        display: none;
+    }
+    .highlighted .illusation4::before {
+        max-height: 200px;
+        width: 75%;
+    }
+    .highlighted .illusation4 {
+        padding-top: 300px;
     }
 }
 
@@ -584,11 +619,18 @@ a[href$="pdf"]:first-child::before {
     .pga .wp-block-group {
         width: 100%;
     }
+    .pga .wp-block-group p {
+        width: 98%;
+    }
     .pga .illusation3 {
         margin-left: 0%;
     }
     .pga.highlighted h4 {
         margin-left: 1%;
+    }
+    .pga table td {
+        padding: 5px;
+        font-size: 0.4em;
     }
 }
 
@@ -608,6 +650,24 @@ a[href$="pdf"]:first-child::before {
 
 .pga-intro {
     font-size: 1.2em
+}
+
+.proprio a[href$="jpg"] {
+    display: none;
+}
+
+@media only screen and (max-width: 959px) {
+    .proprio a[href$="jpg"] {
+        display: inline;
+    }
+    figure.proprio {
+        display: none;
+    }
+}
+
+.content p.partner {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 html.entry {
