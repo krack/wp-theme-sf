@@ -10,6 +10,7 @@ add_theme_support( 'title-tag' );
 
 wp_enqueue_style( 'normalize-styles', "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
 
+wp_enqueue_script( 'sellesfrancais-menu', get_template_directory_uri() .'/js/menu.js', array(), null, true);
 
 function register_my_menus() {
     register_nav_menus(
