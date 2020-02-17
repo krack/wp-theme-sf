@@ -143,6 +143,18 @@ nav li:hover ul {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+@media only screen and (min-width: 959px) and (max-width: 1100px) {
+    nav {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+    nav {
+        font-size: 0.9em;
+    }
+}
+
 @media only screen and (max-width: 959px) {
     nav {
         display: none;
@@ -383,12 +395,12 @@ a[href$="pdf"]:first-child::before {
     background-image: url("assets/images/Illustrations-5.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 339px;
-    height: 450px;
+    width: 500px;
+    height: 670px;
     display: block;
     position: absolute;
     right: 0;
-    top: 150px;
+    top: 50px;
 }
 
 .highlighted.illusation2 {
@@ -437,6 +449,13 @@ a[href$="pdf"]:first-child::before {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+@media only screen and (max-width: 959px) {
+    .wp-block-columns {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
 }
 
 .highlighted.illusation6>*>* {
@@ -526,6 +545,7 @@ a[href$="pdf"]:first-child::before {
     }
     .highlighted.illusation5::after {
         max-height: 410px;
+        max-width: 340px;
         top: 29px;
     }
     .highlighted.illusation5 {
@@ -535,11 +555,11 @@ a[href$="pdf"]:first-child::before {
         display: none;
     }
     .highlighted .illusation4::before {
-        max-height: 200px;
-        width: 75%;
+        max-height: 300px;
+        width: 100%;
     }
     .highlighted .illusation4 {
-        padding-top: 300px;
+        padding-top: 350px;
     }
 }
 
@@ -585,7 +605,7 @@ a[href$="pdf"]:first-child::before {
 
 .pga.highlighted h4 {
     margin-left: 1.5em;
-    margin-bottom: 0;
+    margin-bottom: 9px;
     font-size: 1em;
     font-family: "BluuNext-Bold";
 }
@@ -612,7 +632,7 @@ a[href$="pdf"]:first-child::before {
     .pga .wp-block-group:first-child p {
         width: 100%;
     }
-    .pga .wp-block-group p, .illusation4> :first-child {
+    .pga .wp-block-group p, .illusation4> :first-child, .illusation3> :first-child {
         margin-left: 1%;
         padding-left: 0;
     }
@@ -648,7 +668,7 @@ a[href$="pdf"]:first-child::before {
     width: 150px;
 }
 
-.pga-intro {
+.intro {
     font-size: 1.2em
 }
 
@@ -666,8 +686,15 @@ a[href$="pdf"]:first-child::before {
 }
 
 .content p.partner {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.partner img {
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 html.entry {
@@ -776,10 +803,13 @@ html.entry {
     .entry .text {
         position: static;
         margin-top: 80%;
+        margin-left: 5%;
     }
     .entry h1 {
         font-size: 3em;
-        max-width: 60%;
+        max-width: none;
+        text-align: left;
+        transform: rotate(-3deg);
     }
     .entry h2 {
         color: white;
@@ -787,7 +817,9 @@ html.entry {
         font-size: 1em;
         font-weight: lighter;
         margin: 0;
-        max-width: 60%;
+        max-width: none;
+        transform: rotate(-3deg);
+        margin-left: 8px;
     }
     .entry .text::after {
         width: 90%;
