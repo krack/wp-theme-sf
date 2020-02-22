@@ -220,6 +220,12 @@ h1:empty::after {
     content: none;
 }
 
+h1:empty {
+    margin: 0;
+    margin-bottom: 30px;
+    transform: none;
+}
+
 @media only screen and (max-width: 959px) {
     h1 {
         text-align: center;
@@ -230,6 +236,9 @@ h1:empty::after {
     h1::after {
         margin: auto;
         margin-top: 2%;
+    }
+    h1:empty {
+        margin-bottom: 60px;
     }
 }
 
