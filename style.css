@@ -70,6 +70,10 @@ nav a[href="#"] {
     left: 2%;
 }
 
+nav{
+
+    border-bottom: lightgray 1px solid;
+}
 nav li {
     display: block;
     list-style: none;
