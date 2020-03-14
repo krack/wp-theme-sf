@@ -368,6 +368,10 @@ a[href$="pdf"]:first-child::before {
     font-size: 1.2em;
     margin-bottom: 50px;
 }
+.highlighted.flat {
+    clip-path: none;
+    padding-top: 0px;
+}
 
 .approbation-request.highlighted h4, .highlighted p {
     width: 45%;
@@ -623,11 +627,6 @@ a[href$="pdf"]:first-child::before {
 
 .pga h3::after {
     content: none;
-}
-
-.pga.highlighted {
-    clip-path: none;
-    padding-top: 0px;
 }
 
 .pga>*:first-child>p:first-child {
