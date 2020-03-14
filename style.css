@@ -47,6 +47,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     color: #0e113b;
+    width: max-content;
 }
 
 nav a[href="#"] {
@@ -87,14 +88,20 @@ nav li ul {
     background-color: #0d103b;
     font-size: 0.8em;
     z-index: 999;
+    min-width: max-content;
 }
 
 nav li ul li {
     display: block;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 nav li ul li a {
     color: white;
+    white-space: nowrap;
+    width: 100%;
+    display: inline-block;
 }
 
 nav li:hover ul {
