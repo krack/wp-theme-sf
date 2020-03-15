@@ -130,6 +130,7 @@ nav li:hover ul {
     cursor: pointer;
     position: absolute;
     right: 5%;
+    top: 3%;
 }
 
 #menu-mobile .bar1, #menu-mobile .bar2, #menu-mobile .bar3 {
@@ -140,6 +141,10 @@ nav li:hover ul {
     transition: 0.4s;
 }
 
+#menu-mobile.change .bar1, #menu-mobile.change .bar2, #menu-mobile.change .bar3 {
+
+    background-color: white;
+}
 #menu-mobile.change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
@@ -170,6 +175,9 @@ nav li:hover ul {
     nav {
         display: none;
         z-index: 100;
+    }
+    nav .menu{
+        padding-top: 10px;
     }
     #menu-mobile {
         display: inline-block;
@@ -736,6 +744,14 @@ a[href$="pdf"]:first-child::before {
     height: 200px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+@media only screen and (max-width: 959px) {
+    .partner img {
+        width: 49%;
+        margin: 0;
+        display: inline-block;
+    }
 }
 
 html.entry {
