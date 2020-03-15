@@ -130,7 +130,7 @@ nav li:hover ul {
     cursor: pointer;
     position: absolute;
     right: 5%;
-    top: 3%;
+    padding-top: 3%;
 }
 
 #menu-mobile .bar1, #menu-mobile .bar2, #menu-mobile .bar3 {
