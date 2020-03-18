@@ -273,6 +273,13 @@ h2 {
     font-size: 2em;
 }
 
+@media only screen and (max-width: 959px) {
+    h2 {
+        text-align: center;
+        font-size: 1em;
+    }
+}
+
 h3 {
     text-decoration: none;
     position: relative;
@@ -729,7 +736,7 @@ a[href$="pdf"]:first-child::before {
     .proprio a[href$="jpg"] {
         display: inline;
     }
-    figure.proprio {
+    figure.proprio , figure.proprio.is-resized, .proprio figure.is-resized{
         display: none;
     }
 }
@@ -820,6 +827,8 @@ html.entry {
     background: none;
     padding-left: 0;
 }
+
+
 
 .entry .text::after {
     text-decoration: none;
