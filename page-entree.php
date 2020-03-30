@@ -14,11 +14,11 @@
     <div  class="illustration"></div>
     <div class="text">
     
-        <h1>Guide <span class="edition">2020</span> <br />Selle Français <br /> des jeunes  <br />étalons</h1>
+        <h1>Guide <span class="edition"><?php echo date("Y"); ?></span> <br />Selle Français <br /> des jeunes  <br />étalons</h1>
         <h2>Selle Français young stallion guide</h2>
         
     </div>
-    <!--<a href="/acceuil">Entrez</a>-->
+    <a href="/accueil">Entrez</a>
 
 </div> <!-- /.container -->
 <footer class="blog-footer">

@@ -758,6 +758,7 @@ a[href$="pdf"]:first-child::before {
         width: 49%;
         margin: 0;
         display: inline-block;
+        height: inherit;
     }
 }
 
@@ -853,7 +854,7 @@ html.entry {
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
-    bottom: 10%;
+    bottom: 6%;
     text-decoration: none;
 }
 
