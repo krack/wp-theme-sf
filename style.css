@@ -324,15 +324,21 @@ h4 {
 }
 
 table {
-    background-image: linear-gradient(to right, #2a2927, #f1c589);
-    background-origin: border-box;
-    border-spacing: 0px 1px;
-    border-bottom: 1px solid transparent;
-    margin-bottom: 50px;
-}
 
+    border-spacing: 0px 1px;
+}
+th{
+    background-color: #152857;
+    color: white;
+    font-family: "FengardoNeue_Black";
+    padding: 15px;
+}
+tr + tr th{
+    width: 10%;
+}
 td {
     background-color: white;
+    text-align: center;
 }
 
 hr {
@@ -378,6 +384,11 @@ a[href$="pdf"]:first-child::before {
     margin: auto;
     margin-bottom: 10px;
 }
+
+a.no-pdf-style[href$="pdf"]:first-child::before{
+    content: none;
+}
+
 
 .highlighted {
     clip-path: polygon(0 150px, 100% 0, 100% 100%, 0% 100%);
@@ -824,9 +835,11 @@ html.entry {
     font-size: 2em;
     font-weight: lighter;
     margin: 0;
-    transform: translate(-50%) rotate(-3deg);
+    transform: translate(-54%) rotate(-3deg);
     background: none;
     padding-left: 0;
+
+    font-family: "FengardoNeue_Regular";
 }
 
 

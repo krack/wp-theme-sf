@@ -1,4 +1,13 @@
+
+
 </div> <!-- /.container -->
+<?php 
+
+if(function_exists("shf_login_block")){
+    shf_login_block();
+}
+
+?>
 <footer class="blog-footer">
     <hr />
     <span class="copyright">Copyright © <?php echo date("Y"); ?> Stud Book Selle Français | Tous droits réservés | <a href="/mention-legales">Mentions légales</a> | Réalisé par <a href="https://www.services-peps.fr/" target="_blank">PEPS</a><span>
