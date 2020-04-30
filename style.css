@@ -376,7 +376,7 @@ a[href$="pdf"]:first-child::before {
     content: '';
     background-image: url("assets/images/pdf.svg");
     background-repeat: no-repeat;
-    background-size: 60px 60px;
+    background-size:contain;
     background-position: center;
     width: 100px;
     height: 60px;
@@ -944,4 +944,10 @@ button {
 .highlighted p.fullspace{
     width: initial;
     margin-left:20%;
+}
+
+.pdf-compact{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
