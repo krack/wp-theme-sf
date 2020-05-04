@@ -32,7 +32,7 @@ body {
 }
 
 nav {
-    margin: 0 10%;
+    margin: 0 7%;
 }
 
 nav ul {
@@ -85,10 +85,18 @@ nav li {
 
 nav li ul {
     display: none;
-    background-color: #0d103b;
+    background: radial-gradient(#152857, #0b0f1e);
     font-size: 0.8em;
     z-index: 999;
     min-width: max-content;
+    color: white;
+}
+
+.page-accueil-2 nav li ul {
+
+    background: none;
+    background-color: white;
+    color: #152857;
 }
 
 nav li ul li {
@@ -98,7 +106,7 @@ nav li ul li {
 }
 
 nav li ul li a {
-    color: white;
+    color: inherit;
     white-space: nowrap;
     width: 100%;
     display: inline-block;
@@ -110,6 +118,8 @@ nav li:hover ul {
     left: 0;
     right: 0;
 }
+
+
 
 .is-provider-youtube {
     margin-left: 1px;
@@ -202,7 +212,7 @@ nav li:hover ul {
         color: white;
     }
     #menu-mobile.change+nav .sub-menu {
-        background-color: transparent;
+        background: none;
         display: none;
     }
     #menu-mobile.change+nav .sub-menu.open {
@@ -213,7 +223,7 @@ nav li:hover ul {
 
 h1 {
     margin: 0;
-    margin-top: 70px;
+    margin-top: 100px;
     margin-bottom: 70px;
     padding: 0;
     font-size: 3em;
@@ -271,6 +281,18 @@ h2 {
     white-space: nowrap;
     margin: 70px auto 30px auto;
     font-size: 2em;
+}
+
+h2.page-subtitle{
+   transform:rotate(-3deg);
+    background: none;
+    color: #152857;
+    margin: 0;
+
+    margin-top: -50px;
+    transform: translate(-50%) rotate(-3deg);
+    margin-left: 50%;
+    font-family: "FengardoNeue_Black";
 }
 
 @media only screen and (max-width: 959px) {
@@ -406,6 +428,11 @@ a.no-pdf-style[href$="pdf"]:first-child::before{
     padding-top: 0px;
     padding-top: 50px;
     margin-bottom: 50px;
+}
+
+.highlighted.center p{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .approbation-request.highlighted h4, .highlighted p {
@@ -571,6 +598,8 @@ a.no-pdf-style[href$="pdf"]:first-child::before{
     display: block;
     position: absolute;
     right: 0;
+    max-height: 350px;
+    max-width: 312px;
 }
 
 .illusation4 {
@@ -920,26 +949,22 @@ button {
 
 .blog-footer {
     text-align: center;
-    margin-top: 30px;
+    padding-top: 20px;
     padding-bottom: 20px;
+    background: radial-gradient(#152857, #0b0f1e);
 }
 
 .copyright {
     font-size: 0.9em;
-    color: lightgray;
+    color: white;
 }
 
 .copyright a {
-    color: lightgray;
+    color: white;
     text-decoration: none;
 }
 
-.blog-footer hr {
-    background: linear-gradient(to right, #152857, #152857, #152857);
-    width: 45%;
-    height: 3px;
-    transform: none;
-}
+
 
 .highlighted p.fullspace{
     width: initial;
@@ -950,4 +975,388 @@ button {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+
+
+
+
+div.welcome-bloc{
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0 100%);
+    margin-top: -65px;
+    margin-bottom: -65px;
+    color: #152857;
+    height: 550px;
+    box-sizing: border-box;
+}
+
+div.welcome-bloc .wp-block-button a{
+    background: none;
+    border: solid 1px #152857;
+    text-transform: uppercase;
+    font-family: "FengardoNeue_Black";
+    padding-bottom: 7px;
+}
+div.welcome-bloc .wp-block-button a:hover, div.welcome-bloc .wp-block-button a:active{
+    text-transform: uppercase;
+    font-family: "FengardoNeue_Black";
+    background-color: white;
+    color: #152857;
+    border-color: transparent;
+}
+
+div.welcome-bloc:nth-of-type(1){
+    background: radial-gradient(#152857, #0b0f1e);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0 100%);
+    margin-top: 0px;
+    color: white;
+    padding-bottom: 70px;
+    padding-top: 120px;
+    height: 500px;
+
+}
+div.welcome-bloc:nth-of-type(3) .wp-block-button a, div.welcome-bloc:nth-of-type(5) .wp-block-button a, div.welcome-bloc:nth-of-type(7) .wp-block-button a{
+   border-color: white;
+}
+div.welcome-bloc:nth-of-type(1) h2{
+    font-size: 4em;
+    margin-top: 20px;
+    width: 700px;
+}
+
+div.welcome-bloc:nth-of-type(2) h2{
+    margin-top: 80px;
+}
+div.welcome-bloc:nth-of-type(2) a:hover, div.welcome-bloc:nth-of-type(2) a:active{
+    background: radial-gradient(#152857, #0b0f1e);
+    color: white;
+}
+div.welcome-bloc:nth-of-type(3){
+    background: radial-gradient(#c11f18, #5b1017);
+    color: white;
+}
+div.welcome-bloc:nth-of-type(3) h2{
+    margin-top: 145px;
+}
+
+div.welcome-bloc:nth-of-type(4) h2{
+    margin-top: 140px;
+}
+div.welcome-bloc:nth-of-type(4) a:hover, div.welcome-bloc:nth-of-type(4) a:active{
+    background: radial-gradient(#c11f18, #5b1017);
+    color: white;
+}
+div.welcome-bloc:nth-of-type(5){
+    background: radial-gradient(#152857, #0b0f1e);
+    color: white;
+}
+div.welcome-bloc:nth-of-type(5) h2{
+    margin-top: 155px;
+}
+
+div.welcome-bloc:nth-of-type(6) h2{
+    margin-top: 145px;
+}
+div.welcome-bloc:nth-of-type(6) a:hover, div.welcome-bloc:nth-of-type(6) a:active{
+    background: radial-gradient(#152857, #0b0f1e);
+    color: white;
+}
+div.welcome-bloc:nth-of-type(7){
+    background: radial-gradient(#c11f18, #5b1017);
+    
+    color: white;
+}
+
+div.welcome-bloc:nth-of-type(7) h2{
+    margin-top: 145px;
+}
+div.welcome-bloc:nth-of-type(8){
+    height: 400px;
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0 100%);
+    margin-bottom: 0;
+}
+div.welcome-bloc:nth-of-type(8) h2{
+    margin-top: 160px;
+}
+
+div.welcome-bloc a{
+    color:  inherit;
+    text-decoration: none;
+}
+
+div.welcome-bloc h2{
+
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+    line-height: 0.3em;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%) rotate(-3deg);
+    font-family: "BluuNext-Bold";
+    white-space: inherit;
+    width: inherit;
+    text-align: center;
+    background: none;
+    line-height: 1em;
+    color: inherit;
+}
+div.welcome-bloc h2::after{
+    text-decoration: none;
+    content: " ";
+    display: block;
+    background: linear-gradient(to right, #2a2927, #f1c589, #2a2927);
+    height: 3px;
+    width: 125px;
+    margin: auto;
+    margin-top: 0.2em;
+    margin-bottom: 0.4em;
+
+}
+
+div.welcome-bloc .wp-block-button{
+    color: inherit;
+}
+
+
+
+div.welcome-bloc .fleche::after{
+    content: '';
+    background-image: url("assets/images/fleche.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 35px;
+    display: inline-block;
+    position: relative;
+    top: 25px;
+
+}
+
+.illusation1-reverse {
+    content: '';
+    background-image: url("assets/images/Illustrations-1-reverse.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 550px;
+    height: 700px;
+    display: block;
+    position: absolute;
+    right: 72%;
+    top: 200px;
+}
+
+.illusation2-reverse {
+    content: '';
+    background-image: url("assets/images/Illustrations-2-reverse.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 650px;
+    height: 950px;
+    display: block;
+    position: absolute;
+    left: 65%;
+    top: 830px;
+}
+
+.illusation5-reverse {
+    content: '';
+    background-image: url("assets/images/Illustrations-5-reverse.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 550px;
+    height: 700px;
+    display: block;
+    position: absolute;
+    right: 72%;
+    top: 1760px;
+}
+
+.illusation6-reverse {
+    content: '';
+    background-image: url("assets/images/Illustrations-6-reverse.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 550px;
+    height: 550px;
+    display: block;
+    position: absolute;
+    left: 70%;
+    top: 2520px;
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .illusation1-reverse {
+        right: 72%;
+    }
+    .illusation6-reverse {
+        left: 72%;
+       
+    }
+}
+
+
+@media only screen and (max-width: 1350px) {
+    .illusation1-reverse {
+        right: 75%;
+    }
+
+    .illusation2-reverse {
+        left: 68%;
+    }
+    .illusation6-reverse {
+        right: 75%;
+       
+    }
+
+    .illusation5-reverse {
+        right: 74%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .illusation1-reverse {
+        right: 77%;
+    }
+
+    .illusation2-reverse {
+        left: 68%;
+    }
+    .illusation6-reverse {
+        right: 75%;
+       
+    }
+
+    .illusation5-reverse {
+        right: 77%;
+    }
+}
+
+
+
+@media only screen and (max-width: 959px) {
+
+    .illusation2-reverse, .illusation5-reverse, .illusation6-reverse, .illusation7 {
+        display: none;
+    }
+    .illusation1-reverse{
+        width: inherit;
+        left: -20px;
+        right: 20%;
+        top: 75px;
+        max-height: 200px;
+
+    }
+
+    .admin-bar .illusation1-reverse{
+        top: 121px;
+
+    }
+
+    div.welcome-bloc h2{
+        margin-top: 25px;
+        font-size: 2em;
+    }
+
+    div.welcome-bloc:nth-of-type(1) h2{
+        font-size: 2em; 
+        width: 80%;
+    }
+
+
+    div.welcome-bloc{
+        clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0 100%);
+        margin-top: 10px;
+        height: 370px;
+    }
+    div.welcome-bloc:nth-of-type(2) p br, div.welcome-bloc:nth-of-type(5) p br, div.welcome-bloc:nth-of-type(7) p br{
+        display: none;
+    }
+    
+    div.welcome-bloc:nth-of-type(1){
+        clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0 100%);
+    }
+    div.welcome-bloc:nth-of-type(1){
+        height: 400px;
+    }
+
+    div.welcome-bloc:nth-of-type(1) h2{
+        margin-top: 80px;
+    }
+    div.welcome-bloc:nth-of-type(2) h2{
+        margin-top: 30px;
+        width: 80%;
+    }
+    div.welcome-bloc:nth-of-type(3) h2{
+        margin-top: 80px;
+    }
+    
+    div.welcome-bloc:nth-of-type(4) h2{
+        margin-top: 70px;
+    }
+    div.welcome-bloc:nth-of-type(5) h2{
+        margin-top: 50px;
+    }
+    
+    div.welcome-bloc:nth-of-type(6) h2{
+        margin-top: 50px;
+    }
+
+    
+    div.welcome-bloc:nth-of-type(7) h2{
+        margin-top: 75px;
+    }
+	div.welcome-bloc:nth-of-type(8){
+        clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0 100%);
+        height: 200px;
+	}
+    div.welcome-bloc:nth-of-type(8) h2{
+        margin-top: 60px;
+    }
+
+    div.welcome-bloc .fleche::after{
+        display: none;
+    }
+
+    div.welcome-bloc .wp-block-button a {
+        font-size: 0.9em;
+        padding: 10px;
+        padding-bottom: 7px;
+    }
+    
+    
+}
+.page-selectionner-pour-performer-nos-outils-pour-demain h1{
+    white-space : pre-line;
+    line-break: normal;
+    line-height: 1.1em;
+    width: 700px;
+    max-width: 100%;
+}
+
+.page-testage .illusation2, .page-comment-lire-les-fiches-etalons .highlighted{
+    margin-bottom: 0;
+}
+
+.page-demande-dapprobation h1{
+    margin-bottom: 0;
+
+}
+
+.text_justify {
+    text-align: justify;
+}
+
+a{
+    color: inherit;
+}
+
+body.page-accueil-2 {
+    overflow-x: hidden;
 }

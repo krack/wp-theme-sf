@@ -9,7 +9,7 @@
         <?php wp_head(); ?>
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     </head>
-    <body>
+    <body <?php body_class(); ?>>
         <div class="header">
             <div id="menu-mobile" onclick="this.classList.toggle('change')">
                 <div class="bar1"></div>
