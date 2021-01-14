@@ -964,7 +964,10 @@ button {
     text-decoration: none;
 }
 
-
+.copyright img{
+    height: 30px;
+    vertical-align: middle;
+}
 
 .highlighted p.fullspace{
     width: initial;
@@ -1029,9 +1032,13 @@ div.welcome-bloc:nth-of-type(1) h2{
     width: 700px;
 }
 
+
+
+
 div.welcome-bloc:nth-of-type(2) h2{
     margin-top: 80px;
 }
+
 div.welcome-bloc:nth-of-type(2) a:hover, div.welcome-bloc:nth-of-type(2) a:active{
     background: radial-gradient(#152857, #0b0f1e);
     color: white;
@@ -1124,7 +1131,6 @@ div.welcome-bloc .wp-block-button{
 }
 
 
-
 div.welcome-bloc .fleche::after{
     content: '';
     background-image: url("assets/images/fleche.png");
@@ -1132,10 +1138,9 @@ div.welcome-bloc .fleche::after{
     background-size: contain;
     width: 20px;
     height: 35px;
+    margin-top: 10px;
     display: inline-block;
-    position: relative;
-    top: 25px;
-
+    position: absolute;
 }
 
 .illusation1-reverse {
