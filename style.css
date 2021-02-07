@@ -1026,6 +1026,10 @@ div.welcome-bloc:nth-of-type(1){
 div.welcome-bloc:nth-of-type(3) .wp-block-button a, div.welcome-bloc:nth-of-type(5) .wp-block-button a, div.welcome-bloc:nth-of-type(7) .wp-block-button a{
    border-color: white;
 }
+
+div.welcome-bloc .wp-block-button__link:visited{
+    color: inherit;
+}
 div.welcome-bloc:nth-of-type(1) h2{
     font-size: 4em;
     margin-top: 20px;
@@ -1278,7 +1282,7 @@ div.welcome-bloc .fleche::after{
     div.welcome-bloc{
         clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0 100%);
         margin-top: 10px;
-        height: 370px;
+        height: 372px;
     }
     div.welcome-bloc:nth-of-type(2) p br, div.welcome-bloc:nth-of-type(5) p br, div.welcome-bloc:nth-of-type(7) p br{
         display: none;
